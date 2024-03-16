@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>WikiEntry | WikiServices</title>
+        <link rel="icon" href="src/favicon.png">
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .navbar {
+                display: flex;
+                height: 64px;
+                padding: 4px;
+                border-bottom: solid 1px #aaa;
+                font-size: 2em;
+                background: #eee;
+            }
+
+            .navbar .title {
+                font-size: 1.5em;
+                margin: auto 0;
+            }
+
+            .navbar .link {
+                font-size: 1.25em;
+                margin: auto 0;
+            }
+
+            .navbar a {
+                text-decoration: none;
+                color: #00aaff;
+                transition: 500ms;
+            }
+
+            .navbar a:hover {
+                color: #00ffaa;
+            }
+
+            .article {
+                font-size: 1em;
+                margin: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="src/logo.png"/>
+            <span class="title"><a href="/">WikiServices</a></span>
+            <span class="link"><a href="/wikientry">WikiEntry</a></span>
+        </div>
+
+        <div class="article">
+            <h1>WikiEntry</h1>
+            <div class="about">
+                <p>WikiEntry allows users to read and edit wikis without using a web client. This can save user's bandwitch, which is very important for users with limited connection</p>
+            </div>
+            <div class="maui">
+                <h2>MAUI version</h2>
+                <p>The original version, no longer in development. It will be replaced by Avalonia-based version in the future</p>
+                
+                <p>Few limitations</p>
+                <ul>
+                    <li>Only for Android and Windows sideloading (no iOS and macOS support yet)</li>
+                    <li>No Linux support (yet, should get fixed with Avalonia)</li>
+                    <li>Lack of editing toolbar</li>
+                    <li>Lack of "Show changes" functionality</li>
+                    <li>Only in English</li>
+                    <li>The performance may be bit poorer</li>
+                </ul>
+                <div>
+                    <h3>Android</h3>
+                    <p>Instructions</p>
+                    <ol>
+                        <li>Download the file to your computer</li>
+                        <li>Use AAB to APK converter to make it launchable on your phone</li>
+                        <li>Copy the file to your phone</li>
+                        <li>Run the executable</li>
+                        <li>Hopefully, it should install</li>
+                    </ol>
+
+                    <ul>
+                        <li><a href="http://e.pc.cd/j8iotalK">Android download (aab)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Windows</h3>
+                    <p>Instructions</p>
+                    <ol>
+                        <li>Download the file</li>
+                        <li>Unzip the file</li>
+                        <li>Run the MSIX executable</li>
+                        <li>It should install and run automatically</li>
+                    </ol>
+
+                    <ul>
+                        <li><a href="http://e.pc.cd/HjLy6alK">Windows download (msix)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="avalonia">
+                <p></p>
+            </div>           
+        </div>
+    </body>
+</html>
+

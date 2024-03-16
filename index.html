@@ -1,35 +1,60 @@
 <html>
     <head>
-        <title>Main Page | WikiUtilities</title>
+        <title>Main Page | WikiServices</title>
         <link rel="icon" href="src/favicon.png">
 
         <style>
             body {
                 margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
             }
 
-            .top-nav {
-                width: 100vw;
-                height: 30px;
-                background: #DDD;
-                margin-bottom: 10px;
+            .navbar {
+                display: flex;
+                height: 64px;
+                padding: 4px;
+                border-bottom: solid 1px #aaa;
+                font-size: 2em;
+                background: #eee;
+            }
+
+            .navbar .title {
+                font-size: 1.5em;
+                margin: auto 0;
+            }
+
+            .navbar .link {
+                font-size: 1.25em;
+                margin: auto 0;
+            }
+
+            .navbar a {
+                text-decoration: none;
+                color: #00aaff;
+                transition: 500ms;
+            }
+
+            .navbar a:hover {
+                color: #00ffaa;
+            }
+
+            .article {
+                font-size: 1em;
+                margin: 1em;
             }
         </style>
     </head>
 
     <body>
-        <div class="top-nav">
-            <span>WikiUtilities</span>
-            <nav>
-                <a>About</a>
-                <a>Projects</a>
-                <a>Contact</a>
-            </nav>
+        <div class="navbar">
+            <img src="src/logo.png"/>
+            <span class="title"><a href="/">WikiServices</a></span>
+            <span class="link"><a href="/wikientry">WikiEntry</a></span>
         </div>
 
         <div class="article">
             <img src="/src/logo.png"/>
-            <h1>WikiUtilities - helping wikis grow</h1>            
+            <h1>WikiServices</h1>            
         </div>
     </body>
 </html>
